@@ -1,4 +1,4 @@
-# group_surfing_ws
+# control_launch 
 Package for the launch files controlling.
 
 ## Requirements
