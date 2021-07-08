@@ -16,7 +16,7 @@ Package for the launch files controlling.
 
 2. Build the workspace  
   
-  `cd ~/YOUR_WS`  
+	`cd ~/YOUR_WS`  
   
 	`catkin_make`  
 
@@ -31,9 +31,9 @@ Package for the launch files controlling.
   
 2. Open another terminal, source the env and test  
   
-  `source ~/YOUR_WS/devel/setup.bash`  
+	`source ~/YOUR_WS/devel/setup.bash`  
   
-  `rosrun control_launch control_launch_client`  
+	`rosrun control_launch control_launch_client`  
    
 
 
