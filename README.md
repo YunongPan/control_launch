@@ -34,6 +34,8 @@ Package for the launch files controlling.
 	`source ~/YOUR_WS/devel/setup.bash`  
   
 	`rosrun control_launch control_launch_client`  
+	
+3. After start the node in step 2, a new terminal will be opened and the launch file will be started in this new terminal. After 10 seconds the launch file will be stopped. If you don't want to let the launch file to be finished, just modify the file `control_launch_client.cpp`.
    
 
 
