@@ -1,0 +1,5 @@
+<launch>
+    <node pkg="control_launch" type="start_launch_server" name="start_launch_server" output="screen" />
+    <node pkg="control_launch" type="stop_launch_server" name="stop_launch_server" output="screen" />
+</launch>
+
