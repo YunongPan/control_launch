@@ -9,7 +9,7 @@ Package for the launch files controlling.
 ## Installation
 1. Clone this repository  to your workspace
   
-	`cd ~/YOUR_WS`  
+	`cd ~/YOUR_WS/src`  
   
 	`git clone git@github.com:YunongPan/control_launch.git`  
   
