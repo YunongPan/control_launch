@@ -6,24 +6,19 @@
 int main(int argc, char** argv)
 {
 
+// Open a new terminal and start the launch file in the new terminal.
     ros::init(argc, argv, "control_launch_client");
-
-
     ros::NodeHandle node;
-
-
     ros::service::waitForService("/start_launch_command");
     ros::ServiceClient start_launch_client = node.serviceClient<std_srvs::Trigger>("/start_launch_command");
-
-
     std_srvs::Trigger srv_start;
     srv_start = {};
 
-
     start_launch_client.call(srv_start);
-
-
     ROS_INFO(".launch file started.");
+
+
+// After 10 seconds the launch file will be stopped. If you don't want the launch file to be stopped, just delete following part.
 
     int i = 10;
     while (i > 0) 
@@ -35,15 +30,9 @@ int main(int argc, char** argv)
 
     ros::service::waitForService("/stop_launch_command");
     ros::ServiceClient stop_launch_client = node.serviceClient<std_srvs::Trigger>("/stop_launch_command");
-
-
     std_srvs::Trigger srv_stop;
     srv_stop = {};
-
-
     stop_launch_client.call(srv_stop);
-
-
     ROS_INFO(".launch file stopped.");
 
 
